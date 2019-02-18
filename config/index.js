@@ -20,7 +20,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */
@@ -43,7 +43,11 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    //需要GitHub Pages 使用下面路径
+    assetsPublicPath: '/vuejs-essential/dist/',
+    //不使用则用下面路径
+   //assetsPublicPath: '/',
+
 
     /**
      * Source Maps
